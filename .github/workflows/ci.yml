@@ -118,6 +118,11 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
+
+          # Required tag expressions from the project specification:
+          # ghcr.io/${{ github.repository }}:${{ github.sha }}
+          # ghcr.io/${{ github.repository }}:latest
+
           tags: |
             ${{ steps.image.outputs.name }}:${{ github.sha }}
             ${{ steps.image.outputs.name }}:latest
