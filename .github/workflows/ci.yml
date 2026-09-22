@@ -9,6 +9,7 @@
 # not rewrite the file from scratch: the exercise is the diagnosis, not the
 # typing. Each fault has its own signature, and fixing one only gets you as far
 # as the next.
+# Verify cache reuse on subsequent runs.
 # ---------------------------------------------------------------------------
 name: CI
 
